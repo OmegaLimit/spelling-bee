@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Short Word List</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Shortened Word List</h1>
+    <h2 style="text-align: center;">All words are more than four letters.<br/>All words with "s" are removed.<br/>All words with more than seven different letters removed.</h2>
+    <p id="memo">Output to follow.</p>
+    <button type="button" onclick="run()" id="run-button">Run program.</button>
+    <input type="file" id="words-file" style="display:none;" onchange="readWords(this.files)">
+  </body>
+  <div id="word-list"></div>
+  <script src="short-list.js"></script>
+</html>

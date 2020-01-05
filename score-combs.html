@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Score Honeycombs</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Score Honeycombs</h1>
+    <p id="memo">Output to follow.</p>
+    <button type="button" onclick="openWords()" id="load-button">Load Word List</button>
+    <button type="button" onclick="run()" id="run-button" disabled>Score</button>
+    <input type="file" id="words-file" style="display:none;" onchange="readWords(this.files)">
+    <div id="output"></div>
+    <script src="score-combs.js"></script>
+  </body>
+</html>

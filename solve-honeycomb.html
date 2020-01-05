@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Solve Honeycombs</title>
+    <style>td { width: 50px; height: 50px; margin: 0px;} input { width: 40px; height: 40px; }</style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Solve a <i>New York Times</i> Spelling Bee Puzzle</h1>
+    <p id="memo">Output to follow.</p>
+    <button type="button" onclick="openWords()" id="load-button">Load Word List</button>
+    <table>
+      <tr><td></td><td><input type="text" id="r1"/></td><td></td><td><input type="text" id="r2"/></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><input type="text" id="r3"/></td><td></td><td style="background-color: yellow;"><input type="text" id="center"/></td><td></td><td><input type="text" id="r4"/></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td><input type="text" id="r5"/></td><td></td><td><input type="text" id="r6"/></td><td></td></tr>
+    </table>
+
+    <button type="button" onclick="run()" id="run-button" disabled>Score</button>
+    <input type="file" id="words-file" style="display:none;" onchange="readWords(this.files)">
+    <div id="output"></div>
+    <script src="solve-honeycomb.js"></script>
+  </body>
+</html>
